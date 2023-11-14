@@ -1,5 +1,5 @@
 # Fragment.css
-Feuille de style pour bien commencer un projet
+Feuille de style pour bien commencer un projet sans class mais avec élégance 
 
 ## Feuille de route
 ### Fait
@@ -11,5 +11,5 @@ Feuille de style pour bien commencer un projet
 - Prendre en compte l'ensemble des élément HTML 5
 - Gestion des thème sombre et clair en native
 - Mise en page pour la démo
-- Petit système de mise en page avec nommanclature claire
+- Petit système de mise en page 
 - Optimisation du code
