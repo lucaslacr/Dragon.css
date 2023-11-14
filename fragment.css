@@ -161,11 +161,6 @@ img {
   height: auto;
 }
 
-#skip-main {
-  position: absolute;
-  left: -1000px
-}
-
 a:focus-visible, button:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-visible {
   outline-offset: 2px;
   outline: var(--primaire) 2px solid;
@@ -211,26 +206,12 @@ p {
   color: var(--texte-gris-clair);
 }
 
-.rouge {
-  color: var(--texte-rouge);
-}
-.vert {
-  color: var(--texte-vert);
-}
-
 figcaption,
 legend {
   color: var(--texte-gris-tres-clair);
   font-size: 14px;
   margin-top: -2px;
   margin-bottom: 16px;
-}
-
-p.exergue {
-  padding: 8px 12px;
-  font-weight: bold;
-  color: var(--primaire);
-  border-left: var(--primaire) 4px solid;
 }
 
 blockquote {
@@ -289,17 +270,8 @@ ul {
   margin-left: 16px;
 }
 
-ul.interval-reduit li {
-  margin-bottom: 8px;
-}
-
-ul.interval-reduit {
-  margin-bottom: 24px;
-  margin-top: 0px;
-}
-
 li {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   line-height: 160%;
   font-size: 1rem;
   max-width: 680px;
@@ -349,50 +321,14 @@ video {
   height: auto;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-}
-
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /* Mise en page */
 
-.conteneur-l {
+section {
   max-width: 1200px;
   display: block;
   margin: 0 auto;
-}
-
-.conteneur-m {
-  max-width: 800px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.conteneur-s {
-  max-width: 680px;
-  display: block;
-  margin: 0 auto;
-  padding: 0 25px;
-}
-
-.colonnes {
-  display: flex;
-  flex-direction: row;
-}
-
-.colonne {
-  flex: 1;
-  width: 100%;
 }
 
 img {
@@ -401,81 +337,28 @@ img {
   color: var(--texte-gris-tres-clair);
 }
 
-.conteneur-m iframe {
+iframe {
   border-radius: var(--arrondie-general);
   padding-bottom: 16px;
   max-width: 680px;
 }
 
-.conteneur-m h2 {
+h2 {
   margin: 72px 0px 8px 0px;
 }
 
-.conteneur-m h3 {
+h3 {
   margin: 40px 0px 8px 0px;
   font-family: "WorkSans Bold";
 }
 
-.conteneur-m h4 {
+h4 {
   margin: 32px 0px 8px 0px;
   font-family: "WorkSans Bold";
 }
 
-.conteneur-m figcaption, .conteneur-m legend {
+figcaption, legend {
   max-width: 680px;
-}
-
-.fond-sombre {
-  background-color: var(--surface-sombre);
-}
-
-.ligne {
-  flex-direction: row;
-
-}
-
-.marge-basse-l {
-  margin-bottom: 80px;
-}
-
-.marge-basse-xl {
-  margin-bottom: 120px;
-}
-
-.marge-basse-m {
-  margin-bottom: 48px;
-}
-
-.marge-basse-s {
-  margin-bottom: 16px;
-}
-
-.pour-mobile {
-  display: none;
-}
-
-/* composant bannière */
-
-.banniere {
-  background-color: var(--surface-sombre);
-  color: var(--texte-blanc);
-}
-
-.banniere a {
-  border-bottom: var(--primaire) 2px solid;
-  color: var(--texte-blanc);
-}
-
-.banniere .colonnes {
-  gap: 28px;
-  padding-bottom: 48px;
-}
-
-a.lienapp {
-  border: 1px var(--ligne-claire) solid;
-  padding: 8px 16px;
-  display: inline-block;
-  margin-top: 32px;
 }
 
 u {
@@ -505,11 +388,6 @@ textarea {
   width: 100%;
 }
 
-.ensemble {
-  position: relative;
-  padding-top: 16px;
-}
-
 button,
 input,
 select,
@@ -532,7 +410,7 @@ label {
   top: 6px;
 }
 
-button.primaire {
+button {
   color: var(--texte-blanc);
   background-color: var(--primaire);
   border: 0;
@@ -543,29 +421,20 @@ button.primaire {
   transition: background-color .3s ease;
 }
 
-button.primaire:hover {
+button:hover {
   background-color: var(--primaire-survol);
-}
-
-button.primaire:focus-visible, button:focus-visible, input:focus-visible, select, textarea:focus-visible, a:focus-visible {
-  outline-offset: 2px;
-  outline: var(--primaire) 2px solid;
 }
 
 /* Modularité aux écrans */
 
 @media (max-width: 1248px) {
-  .conteneur-l {
+  section {
     margin-left: 24px;
     margin-right: 24px;
   }
 }
 
 @media (max-width: 860px) {
-  .colonnes {
-    display: flex;
-    flex-direction: column;
-  }
 
   h1 {
     font-size: 40px;
@@ -581,17 +450,5 @@ button.primaire:focus-visible, button:focus-visible, input:focus-visible, select
 
   h4 {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 848px) {
-  .conteneur-m {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .conteneur-s {
-    margin-left: 24px;
-    margin-right: 24px;
   }
 }
