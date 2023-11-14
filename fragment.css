@@ -106,9 +106,9 @@ video {
   --ligne-fonce: #0B051E;
   --ligne-claire: #d7d4e1;
 
-  --typo-titre:sans-serif;
-  --typo-corps:sans-serif;
-  --typo-champ:sans-serif;
+  --typo-titre: sans-serif;
+  --typo-corps: sans-serif;
+  --typo-champ: sans-serif;
   --typo-taille-generale: 16px;
 
   --arrondie-general: 8px;
@@ -124,14 +124,14 @@ video {
     --texte-rouge: #F5758F;
     --texte-vert: #37C3A2;
     --texte-gris-tres-clair: #a9acb6;
-  
+
     --surface-generale: #141414;
     --surface-code: #edecf0;
-  
-    --ligne-fonce: #0B051E;
+
+    --ligne-fonce: #e2e1e6;
     --ligne-claire: #d7d4e1;
   }
-  }
+}
 
 /* Éléments généraux */
 
@@ -161,7 +161,11 @@ img {
   height: auto;
 }
 
-a:focus-visible, button:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-visible {
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+input:focus-visible {
   outline-offset: 2px;
   outline: var(--primaire) 2px solid;
   border-radius: 4px;
@@ -170,7 +174,12 @@ a:focus-visible, button:focus-visible, select:focus-visible, textarea:focus-visi
 
 /* Section CMS */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--typo-titre);
   color: var(--texte-gris);
 }
@@ -181,18 +190,22 @@ h1 {
 
 h2 {
   font-size: 32px;
+  margin: 72px 0px 8px 0px;
 }
 
 h3 {
   font-size: 20px;
+  margin: 40px 0px 8px 0px;
 }
 
 h4 {
   font-size: 16px;
+  margin: 32px 0px 8px 0px;
 }
 
 h5 {
   font-size: 14px;
+  margin: 24px 0px 8px 0px;
 }
 
 h6 {
@@ -236,7 +249,7 @@ blockquote::before {
 cite {
   font-weight: bold;
   font-size: 14px;
-padding-left: 20px;
+  padding-left: 20px;
 }
 
 a {
@@ -246,7 +259,8 @@ a {
 
 p a,
 figcaption a,
-legend a, li a {
+legend a,
+li a {
   line-height: 220%;
   border-bottom: var(--ligne-fonce) 0.5px solid;
   line-height: initial;
@@ -323,8 +337,9 @@ video {
 
 /* Mise en page */
 
-section {
+section, header, footer {
   max-width: 1200px;
+  width: 100%;
   display: block;
   margin: 0 auto;
   margin-right: auto;
@@ -343,21 +358,8 @@ iframe {
   max-width: 680px;
 }
 
-h2 {
-  margin: 72px 0px 8px 0px;
-}
-
-h3 {
-  margin: 40px 0px 8px 0px;
-  font-family: "WorkSans Bold";
-}
-
-h4 {
-  margin: 32px 0px 8px 0px;
-  font-family: "WorkSans Bold";
-}
-
-figcaption, legend {
+figcaption,
+legend {
   max-width: 680px;
 }
 
@@ -367,7 +369,7 @@ u {
 
 code {
   font-family: monospace;
-  background-color: var(--surface-code); 
+  background-color: var(--surface-code);
   border-radius: 2px;
   font-size: 14px;
   padding: 4px 6px;
@@ -428,7 +430,7 @@ button:hover {
 /* Modularité aux écrans */
 
 @media (max-width: 1248px) {
-  section {
+  section, header, footer  {
     margin-left: 24px;
     margin-right: 24px;
   }
