@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="fragment.css" />
     <title>Démo - Fragment.css</title>
 </head>
-<body>
 
+<body>
     <header>
-        <h1>Titre niveau 1</h1>
-        <h2>Titre niveau 2</h2>
-        <h3>Titre niveau 3</h3>
+        <p>Fragment.css</p>
         <nav>
             <ul>
                 <li><a href="#">Accueil</a></li>
@@ -21,27 +20,47 @@
         </nav>
     </header>
     <main>
-    <section>
-        <article>
-            <h2>Article 1</h2>
-            <p>Ceci est le contenu de l'article.</p>
-            <figure>
-                <img src="image.jpg" alt="Description de l'image">
-                <figcaption>Légende de l'image</figcaption>
-            </figure>
-        </article>
+        <section>
+            <h1>Fragment le framework css sans class</h1>
+            <p>Basé uniquement sur les éléments du Html5, Fragment se distingue parmi les autres framework css.</p>
+        </section>
 
-        <article>
-            <h2>Article 2</h2>
-            <p class="rouge">Contenu de l'article 2.</p>
-        </article>
-    </section>
+        <h2>Titre niveau 2</h2>
+        <h3>Titre niveau 3</h3>
+        <section>
+            <article>
+                <h2>Article 1</h2>
+                <p>Ceci est le contenu de l'article.</p>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1701894160394-58d5be1605b9?q=80&w=3536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Description de l'image">
+                    <figcaption>Légende de l'image</figcaption>
+                </figure>
+            </article>
 
-   
+            <article>
+                <h2>Article 2</h2>
+                <p class="rouge">Contenu de l'article 2.</p>
+            </article>
+        </section>
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-example">
+                <label for="email">Enter your email: </label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Subscribe!" />
+            </div>
+        </form>
+
     </main>
     <footer>
-        <p class="vert">2023 Mon Site Web. Tous droits réservés.</p>
+        <p>2023 distribué sous licence MIT</p>
     </footer>
-
 </body>
+
 </html>
