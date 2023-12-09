@@ -99,10 +99,10 @@ video {
   --texte-paragraphe: #53586b;
   --texte-rouge: #b90b2e;
   --texte-vert: #227662;
-  --texte-titre-tres-clair:#606062;
+  --texte-titre-tres-clair: #606062;
 
   --surface-generale: #eef0f3;
-  --surface-code: #edecf0;
+  --surface-code: #dedce2;
 
   --ligne-accessible: #0B051E;
   --ligne-decorative: #d7d4e1;
@@ -120,7 +120,7 @@ video {
     --primaire: #1e24c4;
     --primaire-survol: #1b20ab;
     --primaire-texte: #fff;
-    
+
     --texte-titre: #f0f1f6;
     --texte-paragraphe: #bbbec7;
     --texte-rouge: #F5758F;
@@ -288,7 +288,7 @@ main ul {
 }
 
 main li {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   line-height: 160%;
   font-size: 1rem;
   max-width: 680px;
@@ -304,22 +304,16 @@ article {
   padding: 12px;
   background-color: var(--surface-sombre);
 }
-article h2, article h3 {
+
+article h2,
+article h3 {
   margin-top: 8px;
 }
-/*
-.conteneur-table {
+
+table {
+  border-collapse: collapse;
   overflow-x: scroll;
   width: 100%;
-  border-radius: 4px;
-  padding: 12px;
-  background-color: var(--surface-blanc);
-}
-*/
-table {
-  width: 100%;
-  border-collapse: collapse;
-
 }
 
 tr {
@@ -350,7 +344,9 @@ video {
 
 /* Mise en page */
 
-section, header, footer {
+section,
+header,
+footer {
   max-width: 1200px;
   width: 100%;
   display: block;
@@ -365,11 +361,16 @@ header {
   display: flex;
   padding: 24px 0px;
 }
+
 header ul {
   display: flex;
   flex-direction: row;
   gap: 16px;
   list-style: none;
+}
+
+footer {
+  padding: 24px 0px;
 }
 
 section {
@@ -399,7 +400,8 @@ u {
   text-decoration: none;
 }
 
-code, pre {
+code,
+pre {
   font-family: monospace;
   background-color: var(--surface-code);
   border-radius: 2px;
@@ -435,7 +437,8 @@ label {
   margin-bottom: 4px;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   font-family: var(--typo-corps);
   font-size: medium;
   color: var(--primaire-texte);
@@ -448,14 +451,18 @@ button, input[type="submit"] {
   transition: background-color .3s ease;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
   background-color: var(--primaire-survol);
 }
 
 /* Modularité aux écrans */
 
 @media (max-width: 1248px) {
-  section, header, footer  {
+
+  section,
+  header,
+  footer {
     margin-left: 24px;
     margin-right: 24px;
   }

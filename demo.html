@@ -13,7 +13,6 @@
         <a href="#">Fragment.css</a>
         <nav>
             <ul>
-                <li></li>
                 <li><a href="#">À Propos</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -63,6 +62,14 @@ section, header, footer {
           </code> </pre>
         </section>
         <section>
+            <ul>
+                <li>Time</li>
+                <li>Step</li>
+                <li>Eye</li>
+                <li>Shape</li>
+            </ul>
+        </section>
+        <section>
             <article>
                 <h2>Article 1</h2>
                 <p>Ceci est le contenu de l'article.</p>
@@ -84,22 +91,22 @@ section, header, footer {
                 <input type="email" name="email" id="email" required />
 
                 <label for="objet">Objet de la demande</label>
-                <select name="objet" id="objet"> 
+                <select name="objet" id="objet">
                     <option value="">-- Sélectionner une option --</option>
-                <optgroup label="Commerciale">
-                    <option value="demo">Demander une démo</option>
-                    <option value="Support">Support Commerciale</option>
-                    <option value="formation">Demander une formation</option>
-                  </optgroup>
-                  <optgroup label="Technique">
-                    <option value="bogues">Bogues sur le site</option>
-                    <option value="equipes">Contacter les équipes</option>
-                    <option value="modification">Suggérer une modification</option>
-                  </optgroup>
+                    <optgroup label="Commerciale">
+                        <option value="demo">Demander une démo</option>
+                        <option value="Support">Support Commerciale</option>
+                        <option value="formation">Demander une formation</option>
+                    </optgroup>
+                    <optgroup label="Technique">
+                        <option value="bogues">Bogues sur le site</option>
+                        <option value="equipes">Contacter les équipes</option>
+                        <option value="modification">Suggérer une modification</option>
+                    </optgroup>
                 </select>
 
                 <label for="message">Votre message </label>
-                <textarea id="message" rows="5" ></textarea>
+                <textarea id="message" rows="5"></textarea>
 
                 <input type="submit" value="Envoyer" />
             </form>
