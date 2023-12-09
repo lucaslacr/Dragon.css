@@ -146,6 +146,7 @@ html {
 body {
   background-color: var(--surface-generale);
   color: var(--surface-sombre);
+  margin: 0;
 }
 
 ::selection {
@@ -155,7 +156,6 @@ body {
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 img {
@@ -300,6 +300,11 @@ main li::marker {
   transform: scale(15);
 }
 
+section:has(> table), div:has(> table) { 
+  overflow-x: auto;
+  width: 100%;
+}
+
 article {
   padding: 12px;
   background-color: var(--surface-sombre);
@@ -312,7 +317,6 @@ article h3 {
 
 table {
   border-collapse: collapse;
-  overflow-x: scroll;
   width: 100%;
 }
 
@@ -367,6 +371,7 @@ header ul {
   flex-direction: row;
   gap: 16px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -463,8 +468,8 @@ input[type="submit"]:hover {
   section,
   header,
   footer {
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
