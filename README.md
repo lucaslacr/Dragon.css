@@ -5,8 +5,8 @@ Feuille de style pour pages web. conçu sans class Css avec un accent sur le res
 ### Disponible
 - Gestion native du mode sombre
 - Responsive
-- Prise en compte des element principaux Html5
-- Conforme a
+- Prise en compte des elements principaux Html5
+- Conforme a l'accessiblite numerique
 
 ### À venir
 - Prendre en compte l'ensemble des élément HTML 5
