@@ -97,11 +97,10 @@ video {
 
   --texte-titre: #212639;
   --texte-paragraphe: #53586b;
-  --texte-rouge: #b90b2e;
-  --texte-vert: #227662;
-  --texte-titre-tres-clair: #606062;
+  --texte-legende: #606062;
 
   --surface-generale: #eef0f3;
+  --surface-article: #e3e6eb;
   --surface-code: #dedce2;
 
   --ligne-accessible: #0B051E;
@@ -117,21 +116,20 @@ video {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primaire: #1e24c4;
-    --primaire-survol: #1b20ab;
+    --primaire: #2a30d7;
+    --primaire-survol: #1f24bc;
     --primaire-texte: #fff;
 
     --texte-titre: #f0f1f6;
     --texte-paragraphe: #bbbec7;
-    --texte-rouge: #F5758F;
-    --texte-vert: #37C3A2;
-    --texte-titre-tres-clair: #a9acb6;
+    --texte-legende: #a9acb6;
 
-    --surface-generale: #060e0e;
+    --surface-generale: #060c0e;
+    --surface-article: #091215;
     --surface-code: #0d1616;
 
     --ligne-accessible: #e2e1e6;
-    --ligne-decorative: #d7d4e1;
+    --ligne-decorative: #39383b;
   }
 }
 
@@ -205,18 +203,19 @@ p {
   line-height: 160%;
   font-size: 14px;
   color: var(--texte-paragraphe);
+  margin-bottom: 24px;
 }
 
-figcaption,
-legend {
-  color: var(--texte-titre-tres-clair);
+figcaption, legend {
+  color: var(--texte-legende);
   font-size: 14px;
   margin-top: -2px;
   margin-bottom: 16px;
   max-width: 680px;
 }
 
-u {
+u,
+ins {
   text-decoration: none;
 }
 
@@ -231,28 +230,19 @@ pre {
 }
 
 blockquote {
-  font-size: 24px;
-  position: relative;
+  font-size: 18px;
   padding-left: 20px;
+  padding: 16px 16px 16px 24px;
+  border-left: var(--primaire) solid 2px;
 }
 
-blockquote::before {
-  content: "";
-  background-image: url("assets/quotes.svg");
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  left: -4px;
-  top: -12px;
+blockquote p {
+  font-size: 18px;
 }
 
 cite {
   font-weight: bold;
   font-size: 14px;
-  padding-left: 20px;
 }
 
 a {
@@ -280,7 +270,7 @@ select:focus-visible,
 textarea:focus-visible,
 input:focus-visible {
   outline-offset: 2px;
-  outline: var(--primaire) 2px solid;
+  outline: var(--texte-titre) 2px solid;
   border-radius: 4px;
   transition: none;
 }
@@ -294,7 +284,7 @@ abbr {
   cursor: help;
 }
 
-main ul {
+main ul, main ol {
   margin-left: 16px;
 }
 
@@ -313,7 +303,10 @@ main li::marker {
 
 article {
   padding: 12px;
-  background-color: var(--surface-sombre);
+  background-color: var(--surface-article);
+  border-radius: var(--arrondie-general);
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 article h2,
@@ -321,7 +314,21 @@ article h3 {
   margin-top: 8px;
 }
 
-section:has(> table), div:has(> table) { 
+hr {
+  border: solid 1px var(--ligne-decorative);
+}
+
+mark {
+  background-color: var(--primaire);
+  color: var(--primaire-texte);
+}
+
+section:has(> table),
+div:has(> table),
+article:has(> table),
+div:has(> pre),
+section:has(> pre),
+article:has(> pre) {
   overflow-x: auto;
   width: 100%;
 }
@@ -353,14 +360,22 @@ tfoot {
 
 video {
   width: 100%;
+  max-width: 1200px;
   height: auto;
+  border-radius: var(--arrondie-general);
+}
+
+audio {
+  width: 100%;
+  max-width: 680px;
 }
 
 iframe {
   border-radius: var(--arrondie-general);
   padding-bottom: 16px;
   max-width: 680px;
-  overflow:hidden;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 /* Mise en page */
@@ -403,11 +418,39 @@ main img {
   border-radius: var(--arrondie-general);
   max-width: 680px;
   width: 100%;
-  color: var(--texte-titre-tres-clair);
+  color: var(--texte-legende);
   margin: 8px 0px;
 }
 
 /* champs de saisie */
+
+fieldset {
+  margin-bottom: 40px;
+}
+
+form legend {
+  color: var(--typo-titre);
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  max-width: 680px;
+}
+
+form ul, form ol {
+  list-style: none;
+}
+
+label {
+  color: var(--texte-titre);
+  font-weight: bold;
+  display: flex;
+  font-size: small;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  gap: 8px;
+  align-items: center;
+}
 
 input,
 select,
@@ -425,15 +468,6 @@ textarea {
   width: 100%;
 }
 
-label {
-  color: var(--texte-titre);
-  font-weight: bold;
-  display: block;
-  font-size: small;
-  margin-top: 16px;
-  margin-bottom: 4px;
-}
-
 button,
 input[type="submit"] {
   font-family: var(--typo-corps);
@@ -446,6 +480,17 @@ input[type="submit"] {
   margin: 15px 0 0 0;
   padding: 12px 24px;
   transition: background-color .3s ease;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+input[type="color"] {
+  width: 80px;
+  height: 40px;
+  padding: 0;
 }
 
 button:hover,
