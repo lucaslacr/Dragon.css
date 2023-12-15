@@ -91,66 +91,69 @@ video {
 /* Variables */
 
 :root {
-  --primaire: #1e24c4;
-  --primaire-survol: #1b20ab;
-  --primaire-texte: #fff;
+  --primary: #1e24c4;
+  --primary-hover: #1b20ab;
+  --primary-text: #fff;
 
-  --texte-titre: #212639;
-  --texte-paragraphe: #53586b;
-  --texte-legende: #606062;
+  --text-title: #212639;
+  --text-paragraph: #53586b;
+  --text-legend: #606062;
 
-  --surface-generale: #eef0f3;
+  --surface-main: #eef0f3;
   --surface-article: #e3e6eb;
   --surface-code: #dedce2;
 
-  --ligne-accessible: #0B051E;
-  --ligne-decorative: #d7d4e1;
+  --line-accessible: #0B051E;
+  --line-decorative: #d7d4e1;
+  --line-error: #ca192e;
 
-  --typo-titre: sans-serif;
+
+  --typo-title: sans-serif;
   --typo-corps: sans-serif;
-  --typo-champ: sans-serif;
-  --typo-taille-generale: 16px;
+  --typo-input: sans-serif;
+  --typo-size-main: 16px;
 
-  --arrondie-general: 8px;
+  --arrondie-main: 8px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primaire: #2a30d7;
-    --primaire-survol: #1f24bc;
-    --primaire-texte: #fff;
+    --primary: #2a30d7;
+    --primary-hover: #1f24bc;
+    --primary-text: #fff;
 
-    --texte-titre: #f0f1f6;
-    --texte-paragraphe: #bbbec7;
-    --texte-legende: #a9acb6;
+    --text-title: #f0f1f6;
+    --text-paragraph: #bbbec7;
+    --text-legend: #a9acb6;
 
-    --surface-generale: #060c0e;
-    --surface-article: #091215;
-    --surface-code: #0d1616;
+    --surface-main: #091015;
+    --surface-article: #0d161b;
+    --surface-code: #101b22;
 
-    --ligne-accessible: #e2e1e6;
-    --ligne-decorative: #39383b;
+    --line-accessible: #e2e1e6;
+    --line-decorative: #39383b;
+    --line-error: #ff6375;
   }
 }
 
-/* Éléments généraux */
+/* mains elements */
 
 html {
   font-family: var(--typo-corps);
-  font-size: var(--typo-taille-generale);
-  color: var(--texte-paragraphe);
+  font-size: var(--typo-size-main);
+  color: var(--text-paragraph);
 }
 
 body {
-  background-color: var(--surface-generale);
+  background-color: var(--surface-main);
   color: var(--surface-sombre);
   margin: 0;
   scroll-behavior: smooth;
 }
 
 ::selection {
-  color: var(--primaire-texte);
-  background-color: var(--primaire);
+  color: var(--primary-text);
+  background-color: var(--primary);
 }
 
 * {
@@ -165,8 +168,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--typo-titre);
-  color: var(--texte-titre);
+  font-family: var(--typo-title);
+  color: var(--text-title);
   font-weight: bold;
 }
 
@@ -202,12 +205,12 @@ p {
   max-width: 680px;
   line-height: 160%;
   font-size: 14px;
-  color: var(--texte-paragraphe);
+  color: var(--text-paragraph);
   margin-bottom: 24px;
 }
 
 figcaption, legend {
-  color: var(--texte-legende);
+  color: var(--text-legend);
   font-size: 14px;
   margin-top: -2px;
   margin-bottom: 16px;
@@ -233,7 +236,7 @@ blockquote {
   font-size: 18px;
   padding-left: 20px;
   padding: 16px 16px 16px 24px;
-  border-left: var(--primaire) solid 2px;
+  border-left: var(--primary) solid 2px;
 }
 
 blockquote p {
@@ -247,7 +250,7 @@ cite {
 
 a {
   text-decoration: none;
-  color: var(--texte-titre);
+  color: var(--text-title);
 }
 
 p a,
@@ -255,13 +258,13 @@ figcaption a,
 legend a,
 li a {
   line-height: 220%;
-  border-bottom: var(--ligne-accessible) 0.5px solid;
+  border-bottom: var(--line-accessible) 0.5px solid;
   line-height: initial;
   transition: .2s;
 }
 
 p a:hover {
-  border-bottom: var(--ligne-accessible) 2px solid;
+  border-bottom: var(--line-accessible) 2px solid;
 }
 
 a:focus-visible,
@@ -270,7 +273,7 @@ select:focus-visible,
 textarea:focus-visible,
 input:focus-visible {
   outline-offset: 2px;
-  outline: var(--texte-titre) 2px solid;
+  outline: var(--text-title) 2px solid;
   border-radius: 4px;
   transition: none;
 }
@@ -279,7 +282,7 @@ dfn,
 abbr {
   line-height: 220%;
   text-decoration: none;
-  border-bottom: var(--ligne-accessible) 1px dashed;
+  border-bottom: var(--line-accessible) 1px dashed;
   line-height: initial;
   cursor: help;
 }
@@ -293,18 +296,18 @@ main li {
   line-height: 160%;
   font-size: 1rem;
   max-width: 680px;
-  color: var(--texte-titre);
+  color: var(--text-title);
 }
 
 main li::marker {
-  color: var(--primaire);
+  color: var(--primary);
   transform: scale(15);
 }
 
 article {
   padding: 12px;
   background-color: var(--surface-article);
-  border-radius: var(--arrondie-general);
+  border-radius: var(--arrondie-main);
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -315,12 +318,12 @@ article h3 {
 }
 
 hr {
-  border: solid 1px var(--ligne-decorative);
+  border: solid 1px var(--line-decorative);
 }
 
 mark {
-  background-color: var(--primaire);
-  color: var(--primaire-texte);
+  background-color: var(--primary);
+  color: var(--primary-text);
 }
 
 section:has(> table),
@@ -339,12 +342,12 @@ table {
 }
 
 tr {
-  border-bottom: var(--ligne-decorative) 1px solid;
+  border-bottom: var(--line-decorative) 1px solid;
 }
 
 td,
 th {
-  color: var(--texte-paragraphe);
+  color: var(--text-paragraph);
   padding: 12px 12px;
   min-width: 120px;
   font-size: 14px;
@@ -353,7 +356,7 @@ th {
 
 thead,
 tfoot {
-  color: var(--texte-titre);
+  color: var(--text-title);
   font-weight: bold;
   padding: 12px 12px;
 }
@@ -362,7 +365,7 @@ video {
   width: 100%;
   max-width: 1200px;
   height: auto;
-  border-radius: var(--arrondie-general);
+  border-radius: var(--arrondie-main);
 }
 
 audio {
@@ -371,7 +374,7 @@ audio {
 }
 
 iframe {
-  border-radius: var(--arrondie-general);
+  border-radius: var(--arrondie-main);
   padding-bottom: 16px;
   max-width: 680px;
   width: 100%;
@@ -415,21 +418,21 @@ section {
 }
 
 main img {
-  border-radius: var(--arrondie-general);
+  border-radius: var(--arrondie-main);
   max-width: 680px;
   width: 100%;
-  color: var(--texte-legende);
+  color: var(--text-legend);
   margin: 8px 0px;
 }
 
-/* champs de saisie */
+/* inputs de saisie */
 
 fieldset {
   margin-bottom: 40px;
 }
 
 form legend {
-  color: var(--typo-titre);
+  color: var(--typo-title);
   font-weight: bold;
   font-size: 28px;
   margin-top: 16px;
@@ -442,7 +445,7 @@ form ul, form ol {
 }
 
 label {
-  color: var(--texte-titre);
+  color: var(--text-title);
   font-weight: bold;
   display: flex;
   font-size: small;
@@ -455,11 +458,11 @@ label {
 input,
 select,
 textarea {
-  font-family: var(--typo-champ);
+  font-family: var(--typo-input);
   font-size: medium;
-  background-color: var(--surface-generale);
-  color: var(--texte-paragraphe);
-  border: 1px solid var(--ligne-accessible);
+  background-color: var(--surface-main);
+  color: var(--text-paragraph);
+  border: 1px solid var(--line-accessible);
   border-radius: 5px;
   display: block;
   margin: 0 0 8px;
@@ -472,8 +475,8 @@ button,
 input[type="submit"] {
   font-family: var(--typo-corps);
   font-size: medium;
-  color: var(--primaire-texte);
-  background-color: var(--primaire);
+  color: var(--primary-text);
+  background-color: var(--primary);
   border: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -495,7 +498,7 @@ input[type="color"] {
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: var(--primaire-survol);
+  background-color: var(--primary-hover);
 }
 
 /* Modularité aux écrans */

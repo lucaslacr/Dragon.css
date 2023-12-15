@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -20,36 +20,54 @@
     </header>
     <main>
         <section>
-            <h1>Fragment le framework css sans class</h1>
-            <p>Basé uniquement sur les éléments du Html5, Fragment se distingue parmi les autres framework css.</p>
+            <h1>Fragment the framework without css class</h1>
+            <p>Based on Html5 elements, fragment is a lite, accessibility focused css framework</p>
         </section>
         <section>
+            <nav>
+                <h2>All elements</h2>
+                <ul>
+                    <li><a href="#link">link</a></li>
+                    <li><a href="#table">table</a></li>
+                    <li><a href="#code">code</a></li>
+                    <li><a href="#form">form</a></li>
+
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h3 id="link">Link</h3>
+            <a href="#"> Iam a link</a>
+        </section>
+        <section>
+            <h3 id="table">Table</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Countries</th>
-                        <th>Capitals</th>
-                        <th>Population</th>
-                        <th>Language</th>
+                        <th>Day</th>
+                        <th>Nb visits </th>
+                        <th>Median time</th>
+                        <th>Conversion</th>
                     </tr>
                 </thead>
                 <tr>
-                    <td>USA</td>
-                    <td>Washington, D.C.</td>
-                    <td>309 million</td>
-                    <td>English</td>
+                    <td>Monday</td>
+                    <td>120</td>
+                    <td>2:03</td>
+                    <td>5</td>
                 </tr>
                 <tr>
-                    <td>Sweden</td>
-                    <td>Stockholm</td>
-                    <td>9 million</td>
-                    <td>Swedish</td>
+                    <td>Tuesday</td>
+                    <td>303</td>
+                    <td>1:07</td>
+                    <td>8</td>
                 </tr>
             </table>
         </section>
         <section>
+            <h3 id="code">Code</h3>
             <pre><code>
-/* Mise en page */
+/* Layout */
 
 section, header, footer {
     max-width: 1200px;
@@ -72,16 +90,16 @@ section, header, footer {
         <section>
             <blockquote>
                 <p>
-                    This site is made from vanilla HTML and the default new.css theme.
-                </p><cite>Nom Prénom</cite>
+                    This site is made with Fragment.css
+                </p><cite>A fantastic person</cite>
             </blockquote>
             <article>
                 <h2>Article 1</h2>
-                <p>Ceci est le contenu de l'article.</p>
+                <p>Article content</p>
                 <figure>
                     <img src="https://images.unsplash.com/photo-1701894160394-58d5be1605b9?q=80&w=3536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Description de l'image">
-                    <figcaption>Légende de l'image</figcaption>
+                    <figcaption>Image legend</figcaption>
                 </figure>
             </article>
 
@@ -91,11 +109,12 @@ section, header, footer {
             </article>
         </section>
         <section>
+            <h3 id="#form">Form</h3>
             <form action="" method="get">
-                <label for="email">Votre email </label>
+                <label for="email">Your email </label>
                 <input type="email" name="email" id="email" required />
 
-                <label for="objet">Objet de la demande</label>
+                <label for="objet">Demande object</label>
                 <select name="objet" id="objet">
                     <option value="">-- Sélectionner une option --</option>
                     <optgroup label="Commerciale">
@@ -110,7 +129,7 @@ section, header, footer {
                     </optgroup>
                 </select>
 
-                <label for="message">Votre message </label>
+                <label for="message">Send </label>
                 <textarea id="message" rows="5"></textarea>
 
                 <input type="submit" value="Envoyer" />

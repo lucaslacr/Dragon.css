@@ -1,18 +1,19 @@
 # Fragment.css
-Feuille de style pour pages web. conçu sans class Css avec un accent sur le responsive et l'acessibilite numerique. Un projet sans class mais avec élégance :)
+Stylesheet for web pages. Designed without using CSS classes, with a focus on responsiveness and digital accessibility. 
 
-## Feuille de route
-### Disponible
-- Gestion native du mode sombre
-- Responsive
-- Prise en compte des elements principaux Html5
-- Conforme a l'accessiblite numerique
+## Roadmap
+### Available
+- Native support for dark mode
+- Responsive design
+- Consideration of main HTML5 elements
+- Compliance with digital accessibility standards
 
-### À venir
-- Prendre en compte l'ensemble des élément HTML 5
-- Page de demo aved l'ensemble des elements Html5
-- publication d'une page web de presentation (sousdomaine)
-- Utiliser davantage de variables
-- Optimisation du code
+### Coming Soon
+- Consideration of all HTML5 elements
+- Demo page showcasing all HTML5 elements
+- Project translation into English
+- Publication of a presentation web page (subdomain)
+- Increased use of variables
+- Code optimization
 
 Version 0.6
