@@ -455,6 +455,12 @@ label {
   align-items: center;
 }
 
+form p {
+  margin-bottom: 2px;
+  font-size: small;
+  margin-top: -4px;
+}
+
 input,
 select,
 textarea {
