@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="fragment.css" />
-    <title>Démo - Fragment.css</title>
+    <title>Demo - Fragment.css</title>
 </head>
 
 <body>
@@ -24,48 +24,32 @@
             <p>Based on Html5 elements, fragment is a lite, accessibility focused css framework</p>
         </section>
         <section>
-            <nav>
-                <h2>All elements</h2>
-                <ul>
-                    <li><a href="#link">link</a></li>
-                    <li><a href="#table">table</a></li>
-                    <li><a href="#code">code</a></li>
-                    <li><a href="#form">form</a></li>
-
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <h3 id="link">Link</h3>
-            <a href="#"> Iam a link</a>
-        </section>
-        <section>
-            <h3 id="table">Table</h3>
+            <h3>Comparaison with Bootstrap</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Day</th>
-                        <th>Nb visits </th>
-                        <th>Median time</th>
-                        <th>Conversion</th>
+                        <th>Framework css</th>
+                        <th>Headline </th>
+                        <th>Responsive</th>
+                        <th>Accordion</th>
                     </tr>
                 </thead>
                 <tr>
-                    <td>Monday</td>
-                    <td>120</td>
-                    <td>2:03</td>
-                    <td>5</td>
+                    <td>Bootstrap</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>Tuesday</td>
-                    <td>303</td>
-                    <td>1:07</td>
-                    <td>8</td>
+                    <td>Fragment</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
                 </tr>
             </table>
         </section>
         <section>
-            <h3 id="code">Code</h3>
+            <h3></h3>
             <pre><code>
 /* Layout */
 
@@ -80,36 +64,45 @@ section, header, footer {
           </code> </pre>
         </section>
         <section>
+          <h3>  What is Fragment ?</h3>
             <ul>
-                <li>Time</li>
-                <li>Step</li>
-                <li>Eye</li>
-                <li>Shape</li>
+                <li>No class css</li>
+                <li>100% accessible</li>
+                <li>100% responsive</li>
             </ul>
+        </section>
+        <section>
+            <details>
+                <summary>Accordion is include ?</summary>
+                Yes absolutely
+              </details>
+              <details>
+                <summary>It wok's with javascript</summary>
+                No, it native Html5
+              </details>
         </section>
         <section>
             <blockquote>
                 <p>
-                    This site is made with Fragment.css
+                   I use Fragment.css for my web projet
                 </p><cite>A fantastic person</cite>
             </blockquote>
             <article>
-                <h2>Article 1</h2>
-                <p>Article content</p>
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1701894160394-58d5be1605b9?q=80&w=3536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Description de l'image">
-                    <figcaption>Image legend</figcaption>
-                </figure>
+                <h2>Build with a strong semantic</h2>
+                <p>this is important for search engine, people who use assistive technologie and to make things greate</p>
             </article>
-
+            <figure>
+                <img src="https://images.unsplash.com/photo-1701894160394-58d5be1605b9?q=80&w=3536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Description de l'image">
+                <figcaption>Image legend</figcaption>
+            </figure>
             <article>
                 <h2>Article 2</h2>
-                <p class="rouge">Contenu de l'article 2.</p>
+                <p>Contenu de l'article 2.</p>
             </article>
         </section>
         <section>
-            <h3 id="#form">Form</h3>
+            <h3>Form</h3>
             <form action="" method="get">
                 <label for="email">Your email </label>
                 <input type="email" name="email" id="email" required />
@@ -129,15 +122,15 @@ section, header, footer {
                     </optgroup>
                 </select>
 
-                <label for="message">Send </label>
+                <label for="message">Your message </label>
                 <textarea id="message" rows="5"></textarea>
 
-                <input type="submit" value="Envoyer" />
+                <input type="submit" value="Send" />
             </form>
         </section>
     </main>
     <footer>
-        <p>2023 distribué sous licence MIT</p>
+        <p>2023 - distribue under licence MIT</p>
     </footer>
 </body>
 

@@ -271,6 +271,7 @@ a:focus-visible,
 button:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
+summary:focus-visible,
 input:focus-visible {
   outline-offset: 2px;
   outline: var(--text-title) 2px solid;
@@ -287,6 +288,16 @@ abbr {
   cursor: help;
 }
 
+summary {
+  cursor: pointer;
+  padding: 16px 8px 8px 8px;
+}
+
+details {
+  border-bottom: solid var(--line-decorative) 1px;
+  padding: 0px 0px 8px 0px;
+}
+
 main ul, main ol {
   margin-left: 16px;
 }
@@ -296,7 +307,6 @@ main li {
   line-height: 160%;
   font-size: 1rem;
   max-width: 680px;
-  color: var(--text-title);
 }
 
 main li::marker {
