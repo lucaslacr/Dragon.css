@@ -129,10 +129,28 @@ section, header, footer {
                 <input type="submit" value="Send" />
             </form>
         </section>
+        <section>
+            <h3>experimental</h3>
+            <button id="showDialogBtn">Show a dialog</button>
+
+            <dialog id="favDialog">
+            <form method="dialog">
+                <p>The background shown outside of this dialog is a backdrop.</p>
+                <button id="confirmBtn">Close the dialog</button>
+            </form>
+            </dialog>
+        </section>
     </main>
     <footer>
         <p>2023 - distribue under licence MIT</p>
     </footer>
+    <script>
+        const showDialogBtn = document.getElementById('showDialogBtn');
+const favDialog = document.getElementById('favDialog');
+
+showDialogBtn.addEventListener('click', () => favDialog.showModal());
+
+    </script>
 </body>
 
 </html>

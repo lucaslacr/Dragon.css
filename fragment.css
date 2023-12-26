@@ -103,6 +103,7 @@ video {
   --surface-main: #eef0f3;
   --surface-article: #e3e6eb;
   --surface-code: #dedce2;
+  --surface-modale: #1d1d2bb8;
 
   --line-accessible: #0B051E;
   --line-decorative: #d7d4e1;
@@ -129,6 +130,7 @@ video {
     --surface-main: #091015;
     --surface-article: #0d161b;
     --surface-code: #101b22;
+    --surface-modale: #000000e5;
 
     --line-accessible: #e2e1e6;
     --line-decorative: #39383b;
@@ -295,6 +297,15 @@ summary {
 details {
   border-bottom: solid var(--line-decorative) 1px;
   padding: 0px 0px 8px 0px;
+}
+
+dialog::backdrop {
+  background-color: var(--surface-modale);
+}
+dialog {
+  background-color: var(--surface-main);
+  border-radius: var(--arrondie-main);
+  border: 0px;
 }
 
 main ul, main ol {
