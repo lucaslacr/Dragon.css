@@ -98,6 +98,7 @@ video {
   --text-title: #212639;
   --text-paragraph: #53586b;
   --text-legend: #606062;
+  --text-alert: #ca192e;
 
   --surface-main: #eef0f3;
   --surface-article: #e3e6eb;
@@ -105,8 +106,6 @@ video {
 
   --line-accessible: #0B051E;
   --line-decorative: #d7d4e1;
-  --line-error: #ca192e;
-
 
   --typo-title: sans-serif;
   --typo-corps: sans-serif;
@@ -125,6 +124,7 @@ video {
     --text-title: #f0f1f6;
     --text-paragraph: #bbbec7;
     --text-legend: #a9acb6;
+    --text-alert: #ff6375;
 
     --surface-main: #091015;
     --surface-article: #0d161b;
@@ -132,7 +132,6 @@ video {
 
     --line-accessible: #e2e1e6;
     --line-decorative: #39383b;
-    --line-error: #ff6375;
   }
 }
 
@@ -433,6 +432,10 @@ main img {
   width: 100%;
   color: var(--text-legend);
   margin: 8px 0px;
+}
+
+[role=alert] {
+  color: var(--text-alert);
 }
 
 /* inputs de saisie */
