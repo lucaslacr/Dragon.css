@@ -1,4 +1,4 @@
-# Fragment.css
+# Dragon.css
 Stylesheet for web pages. Designed without using CSS classes, with a focus on responsiveness and digital accessibility. 
 
 ## Roadmap
@@ -11,9 +11,8 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 ### Coming Soon
 - Consideration of all HTML5 elements
 - Demo page showcasing all HTML5 elements
-- Project translation into English
 - Publication of a presentation web page (subdomain)
 - Increased use of variables
 - Code optimization
 
-Version 0.6
+Version 0.7
