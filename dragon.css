@@ -98,7 +98,7 @@ video {
   --text-title: #212639;
   --text-paragraph: #53586b;
   --text-legend: #606062;
-  --text-alert: #ca192e;
+  --text-alert: #bd1c2f;
 
   --surface-main: #eef0f3;
   --surface-article: #e3e6eb;
@@ -125,7 +125,7 @@ video {
     --text-title: #f0f1f6;
     --text-paragraph: #bbbec7;
     --text-legend: #a9acb6;
-    --text-alert: #ff6375;
+    --text-alert: #fd6a7b;
 
     --surface-main: #091015;
     --surface-article: #0d161b;
@@ -294,9 +294,15 @@ summary {
   padding: 16px 8px 8px 8px;
 }
 
+summary::marker {
+  color: var(--text-title);
+}
+
 details {
   border-bottom: solid var(--line-decorative) 1px;
   padding: 0px 0px 8px 0px;
+  position: relative;
+  max-width: 680px;
 }
 
 dialog::backdrop {
@@ -421,6 +427,11 @@ header {
   padding: 24px 0px;
 }
 
+header p {
+  font-size: 16px;
+  color: var(--text-title);
+}
+
 header ul {
   display: flex;
   flex-direction: row;
@@ -524,6 +535,10 @@ input[type="color"] {
   width: 80px;
   height: 40px;
   padding: 0;
+}
+
+select, input[type="checkbox"], input[type="radio"] {
+  cursor: pointer;
 }
 
 button:hover,
