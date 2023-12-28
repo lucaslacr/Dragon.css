@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="dragon.css" />
-    <title>Demo - Dragon.css</title>
+    <title>Demo page - Dragon.css</title>
 </head>
 
 <body>
@@ -22,6 +22,22 @@
         <section>
             <h1>Dragon the framework without css class</h1>
             <p>Based on Html5 elements, Dragon is a lite, accessibility focused css framework</p>
+        </section>
+        <section>
+            <h2> What is Dragon ?</h2>
+            <article>
+                <h3>No class, only build with a strong semantic</h3>
+                <p>This is important for search engines, for people who use assistive technologies, and for improving things.</p>
+            </article>
+            <article>
+                <h3>Light</h3>
+                <p>Web performance matter, so Dragon is light, all in one file</p>
+            </article>
+            <article>
+                <h3>Accessible</h3>
+                <p>Excellent contrast, Hyrachie of information, focus navigation, ect.</p>
+            </article>
+
         </section>
         <section>
             <h3>Comparaison with Bootstrap</h3>
@@ -61,49 +77,37 @@ section, header, footer {
     margin-right: auto;
     margin-left: auto;
 }
+
+p {
+    max-width: 680px;
+    line-height: 160%;
+    font-size: 14px;
+    color: var(--text-paragraph);
+    margin-bottom: 24px;
+  }
           </code> </pre>
-        </section>
-        <section>
-          <h3>  What is Dragon ?</h3>
-            <ul>
-                <li>No class css</li>
-                <li>100% accessible</li>
-                <li>100% responsive</li>
-            </ul>
         </section>
         <section>
             <details>
                 <summary>Accordion is include ?</summary>
                 Yes absolutely
-              </details>
-              <details>
+            </details>
+            <details>
                 <summary>It work's with javascript</summary>
                 No, it native Html5
-              </details>
+            </details>
         </section>
         <section>
             <blockquote>
                 <p>
-                   I use Dragon.css for my web projet
+                    I use Dragon.css for my web projet
                 </p><cite>A fantastic person</cite>
             </blockquote>
-            <article>
-                <h2>Build with a strong semantic</h2>
-                <p>this is important for search engine, people who use assistive technologie and to make things great</p>
-            </article>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1701894160394-58d5be1605b9?q=80&w=3536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Description de l'image">
-                <figcaption>Image legend</figcaption>
-            </figure>
-            <article>
-                <h2>Article 2</h2>
-                <p>Contenu de l'article 2.</p>
-            </article>
+           
         </section>
-        <section>
-            <h3>Form</h3>
-           <p role="alert">Important message</p>
+        <section><hr>
+            <h2>Form</h2>
+            <p role="alert">Important message</p>
             <form action="" method="get">
                 <label for="email">Your email </label>
                 <input type="email" name="email" id="email" required />
@@ -125,33 +129,25 @@ section, header, footer {
 
                 <label for="message">Your message </label>
                 <textarea id="message" rows="5"></textarea>
-                
-    <label for="RGPD"><input type="checkbox" id="RGPD" name="RGPD" />Agree treatment of my data</label>
+
+                <fieldset>
+                    <legend>Priority</legend>
+                    <label><input type="radio" id="Important" name="Priority" value="Important" />Important</label>
+                    <label><input type="radio" id="Usual" name="Usual" value="Usual" />Usual</label>
+                </fieldset>
+
+                <label for="RGPD"><input type="checkbox" id="RGPD" name="RGPD" />Agree treatment of my data</label>
+
+                <label for="file">Your document </label>
+                <input type="file" id="file" name="file" />
                 <input type="submit" value="Send" />
             </form>
         </section>
-        <section>
-            <h3>experimental</h3>
-            <button id="showDialogBtn">Show a dialog</button>
-
-            <dialog id="favDialog">
-            <form method="dialog">
-                <p>The background shown outside of this dialog is a backdrop.</p>
-                <button id="confirmBtn">Close the dialog</button>
-            </form>
-            </dialog>
-        </section>
     </main>
     <footer>
-        <p>2023 - distribue under licence MIT</p>
+        <p>2023 - distributed under licence MIT</p>
     </footer>
-    <script>
-        const showDialogBtn = document.getElementById('showDialogBtn');
-const favDialog = document.getElementById('favDialog');
 
-showDialogBtn.addEventListener('click', () => favDialog.showModal());
-
-    </script>
 </body>
 
 </html>
