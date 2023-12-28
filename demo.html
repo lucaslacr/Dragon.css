@@ -112,18 +112,16 @@ p {
                 <label for="email">Your email </label>
                 <input type="email" name="email" id="email" required />
 
-                <label for="objet">Demande object</label>
+                <label for="objet">Object</label>
                 <select name="objet" id="objet">
-                    <option value="">-- Sélectionner une option --</option>
-                    <optgroup label="Commerciale">
-                        <option value="demo">Demander une démo</option>
-                        <option value="Support">Support Commerciale</option>
-                        <option value="formation">Demander une formation</option>
+                    <option value="">-- Select an option --</option>
+                    <optgroup label="Feature">
+                        <option value="feature">Ask a feature</option>
+                        <option value="Support">contact support</option>
                     </optgroup>
-                    <optgroup label="Technique">
-                        <option value="bogues">Bogues sur le site</option>
-                        <option value="equipes">Contacter les équipes</option>
-                        <option value="modification">Suggérer une modification</option>
+                    <optgroup label="Bogs">
+                        <option value="bugsite">Bogues on web site</option>
+                        <option value="bugcss">Contacter les équipes</option>
                     </optgroup>
                 </select>
 
@@ -133,13 +131,14 @@ p {
                 <fieldset>
                     <legend>Priority</legend>
                     <label><input type="radio" id="Important" name="Priority" value="Important" />Important</label>
-                    <label><input type="radio" id="Usual" name="Usual" value="Usual" />Usual</label>
+                    <label><input type="radio" id="Usual" name="Priority" value="Usual" />Usual</label>
                 </fieldset>
-
-                <label for="RGPD"><input type="checkbox" id="RGPD" name="RGPD" />Agree treatment of my data</label>
 
                 <label for="file">Your document </label>
                 <input type="file" id="file" name="file" />
+
+                <label for="RGPD"><input type="checkbox" id="RGPD" name="RGPD" />Agree treatment of my data</label>
+
                 <input type="submit" value="Send" />
             </form>
         </section>
