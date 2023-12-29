@@ -91,8 +91,8 @@ video {
 /* Variables */
 
 :root {
-  --primary: #1e24c4;
-  --primary-hover: #1b20ab;
+  --primary: #0c4ccf;
+  --primary-hover: #0a43b7;
   --primary-text: #fff;
 
   --text-title: #212639;
@@ -118,8 +118,8 @@ video {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #2a30d7;
-    --primary-hover: #1f24bc;
+    --primary: #0c4ccf;
+    --primary-hover: #0a43b7;
     --primary-text: #fff;
 
     --text-title: #f0f1f6;
@@ -578,7 +578,6 @@ input[type="submit"]:hover {
 /* for all screen */
 
 @media (max-width: 1248px) {
-
   section,
   header,
   footer {
