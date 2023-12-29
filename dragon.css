@@ -1,4 +1,4 @@
-/* rest css */
+/* reset css */
 html,
 body,
 div,
@@ -137,7 +137,7 @@ video {
   }
 }
 
-/* mains elements */
+/* main elements */
 
 html {
   font-family: var(--typo-corps);
@@ -161,7 +161,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Section contenu */
+/* Content element */
 
 h1,
 h2,
@@ -404,13 +404,18 @@ audio {
 
 iframe {
   border-radius: var(--round-main);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   max-width: 680px;
+  min-height: 280px;
   width: 100%;
   overflow-x: scroll;
 }
 
-/* Mise en page */
+[role=alert] {
+  color: var(--text-alert);
+}
+
+/* Layout */
 
 section,
 header,
@@ -459,18 +464,7 @@ main img {
   margin: 8px 0px;
 }
 
-iframe {
-  min-height: 280px;
-  width: 100%;
-  overflow: hidden;
-  border-radius: var(--round-main);
-}
-
-[role=alert] {
-  color: var(--text-alert);
-}
-
-/* inputs de saisie */
+/* inputs and form */
 
 fieldset {
   margin-bottom: 40px;
@@ -570,7 +564,18 @@ input[type="submit"]:hover {
   background-color: var(--primary-hover);
 }
 
-/* Modularité aux écrans */
+/* print */
+
+@media print {
+  footer, aside, nav, form {
+    display: none !important;
+  }
+  section {
+    padding: 12px 0px;
+  }
+}
+
+/* for all screen */
 
 @media (max-width: 1248px) {
 
