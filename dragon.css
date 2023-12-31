@@ -358,6 +358,8 @@ mark {
 section:has(> table),
 div:has(> table),
 article:has(> table),
+aside:has(> table),
+aside:has(> pre),
 div:has(> pre),
 section:has(> pre),
 article:has(> pre) {
@@ -418,6 +420,7 @@ iframe {
 /* Layout */
 
 section,
+aside,
 header,
 footer {
   max-width: 1200px;
@@ -452,7 +455,7 @@ footer {
   padding: 24px 0px;
 }
 
-section {
+section, aside {
   padding: 40px 0px;
 }
 
@@ -579,6 +582,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 1248px) {
   section,
+  aside,
   header,
   footer {
     padding-left: 24px;
