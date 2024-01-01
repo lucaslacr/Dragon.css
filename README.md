@@ -15,4 +15,4 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - Increased use of variables
 - Code optimization
 
-Version 0.7
+Version 0.8

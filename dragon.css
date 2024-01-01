@@ -570,7 +570,7 @@ input[type="submit"]:hover {
 /* print */
 
 @media print {
-  footer, aside, nav, form {
+  footer, aside, nav, form, dialog, [role=dialog] {
     display: none !important;
   }
   section {
