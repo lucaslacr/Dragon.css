@@ -88,6 +88,8 @@ p {
           </code> </pre>
         </section>
         <section>
+            <h2>Interactive elements</h2>
+            <h3>Accordion</h3>
             <details>
                 <summary>Accordion is include ?</summary>
                 Yes absolutely
@@ -96,6 +98,15 @@ p {
                 <summary>It work's with javascript</summary>
                 No, it native Html5
             </details>
+            <h3>Modal</h3>
+            <dialog id="dialog">
+                <h4>I'm a modal</h4>
+                <p>It's helpful to display complementary informations</p>
+                <form method="dialog">
+                    <button>Close</button>
+                </form>
+            </dialog>
+            <button onclick="dialog.showModal()">Open Modal</button>
         </section>
         <section>
             <blockquote>

@@ -316,6 +316,10 @@ dialog {
   background-color: var(--surface-main);
   border-radius: var(--round-main);
   border: 0px;
+  max-width: 720px;
+}
+dialog > :first-child {
+  margin-top: 2px;
 }
 
 main ul, main ol {
