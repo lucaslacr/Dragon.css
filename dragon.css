@@ -498,6 +498,10 @@ label {
   align-items: center;
 }
 
+label:has(input){
+  cursor: pointer;
+}
+
 form p {
   margin-bottom: 2px;
   font-size: small;
