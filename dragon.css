@@ -292,8 +292,7 @@ abbr {
 
 summary {
   cursor: pointer;
-  padding: 16px 8px 2px 8px;
-  margin-bottom: 6px;
+  padding: 16px 8px 16px 8px;
   color: var(--text-title);
 }
 
@@ -304,9 +303,12 @@ summary::marker {
 details {
   border-bottom: solid var(--line-decorative) 1px;
   color: var(--text-paragraph);
-  padding: 0px 0px 8px 0px;
   position: relative;
   max-width: 680px;
+}
+
+details[open] {
+  padding: 0px 0px 8px 0px;
 }
 
 dialog::backdrop {
@@ -555,6 +557,7 @@ input[type="color"] {
 
 input[type=file] {
   border: 1px dashed var(--line-accessible);
+  cursor: pointer;
 }
 
 input[type=file]::file-selector-button {
