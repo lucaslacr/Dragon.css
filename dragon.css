@@ -233,14 +233,20 @@ pre {
   line-height: 135%;
 }
 
-blockquote {
+pre {
+  overflow-x: auto;
+  width: 100%;
+  border-radius: var(--round-main);
+}
+
+blockquote, q {
   font-size: 18px;
   padding-left: 20px;
   padding: 16px 16px 16px 24px;
   border-left: var(--primary) solid 2px;
 }
 
-blockquote p {
+blockquote p, q p {
   font-size: 18px;
 }
 
@@ -252,6 +258,10 @@ cite {
 a {
   text-decoration: none;
   color: var(--text-title);
+}
+
+u {
+  text-decoration: none;
 }
 
 p a,
@@ -365,11 +375,7 @@ mark {
 section:has(> table),
 div:has(> table),
 article:has(> table),
-aside:has(> table),
-aside:has(> pre),
-div:has(> pre),
-section:has(> pre),
-article:has(> pre) {
+aside:has(> table){
   overflow-x: auto;
   width: 100%;
 }
@@ -459,6 +465,8 @@ header ul {
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
   padding: 24px 0px;
 }
 
@@ -504,7 +512,7 @@ label {
   align-items: center;
 }
 
-label:has(input){
+label:has(input[type="checkbox"]), label:has(input[type="radio"]) { 
   cursor: pointer;
 }
 
@@ -542,6 +550,12 @@ input[type="submit"] {
   margin: 15px 0 0 0;
   padding: 12px 24px;
   transition: background-color .3s ease;
+}
+
+button:disabled {
+  opacity: .9;
+  cursor:not-allowed;
+ /* background: repeating-linear-gradient(45deg, var(--primary) 0, var(--primary-hover) 1px, var(--primary-hover) 6px, var(--primary) 4px, var(--primary) 0.75em);*/
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -618,5 +632,9 @@ input[type="submit"]:hover {
 
   h4 {
     font-size: 16px;
+  }
+
+  header, footer {
+    flex-direction: column;
   }
 }
