@@ -99,11 +99,14 @@ video {
   --text-paragraph: #53586b;
   --text-legend: #606062;
   --text-alert: #a0081a;
+  --text-code: #474758;
+  --text-input: #383a44;
 
   --surface-main: #eef0f3;
   --surface-article: #e3e6eb;
-  --surface-code: #dedce2;
+  --surface-code: #dfe2e8;
   --surface-modal: #1d1d2bb8;
+  --surface-input: #eef0f3;
 
   --line-accessible: #0B051E;
   --line-decorative: #ced0da;
@@ -111,6 +114,7 @@ video {
   --typo-title: sans-serif;
   --typo-corps: sans-serif;
   --typo-input: sans-serif;
+  --typo-code: monospace;
   --typo-size-main: 16px;
 
   --round-main: 8px;
@@ -126,11 +130,14 @@ video {
     --text-paragraph: #bbbec7;
     --text-legend: #a9acb6;
     --text-alert: #fd7c8b;
+    --text-code: #bbbec7;
+    --text-input: #c7c9ce;
 
     --surface-main: #091015;
     --surface-article: #0f151c;
     --surface-code: #0f1822;
     --surface-modal: #000000e5;
+    --surface-input: #091015;
 
     --line-accessible: #e2e1e6;
     --line-decorative: #232a34;
@@ -225,8 +232,9 @@ ins {
 
 code,
 pre {
-  font-family: monospace;
+  font-family: var(--typo-code);
   background-color: var(--surface-code);
+  color: var(--text-code);
   border-radius: 2px;
   font-size: 14px;
   padding: 4px 18px;
@@ -529,8 +537,8 @@ select,
 textarea {
   font-family: var(--typo-input);
   font-size: medium;
-  background-color: var(--surface-main);
-  color: var(--text-paragraph);
+  background-color: var(--surface-input);
+  color: var(--text-input);
   border: 1px solid var(--line-accessible);
   border-radius: 5px;
   display: block;
