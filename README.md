@@ -15,4 +15,4 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - Publication of a presentation web page (subdomain)
 - Code optimization
 
-Version 0.9
+Version 1.0
