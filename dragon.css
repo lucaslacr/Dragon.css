@@ -217,7 +217,9 @@ p {
   margin-bottom: 24px;
 }
 
-figcaption, caption, legend {
+figcaption,
+caption,
+legend {
   color: var(--text-legend);
   font-size: 14px;
   margin-top: -2px;
@@ -247,14 +249,16 @@ pre {
   border-radius: var(--round-main);
 }
 
-blockquote, q {
+blockquote,
+q {
   font-size: 18px;
   padding-left: 20px;
   padding: 16px 16px 16px 24px;
   border-left: var(--primary) solid 2px;
 }
 
-blockquote p, q p {
+blockquote p,
+q p {
   font-size: 18px;
 }
 
@@ -339,11 +343,13 @@ dialog {
   border: 0px;
   max-width: 720px;
 }
-dialog > :first-child {
+
+dialog> :first-child {
   margin-top: 2px;
 }
 
-main ul, main ol {
+main ul,
+main ol {
   margin-left: 16px;
 }
 
@@ -384,7 +390,7 @@ mark {
 section:has(> table),
 div:has(> table),
 article:has(> table),
-aside:has(> table){
+aside:has(> table) {
   overflow-x: auto;
   width: 100%;
 }
@@ -479,7 +485,8 @@ footer {
   padding: 24px 0px;
 }
 
-section, aside {
+section,
+aside {
   padding: 40px 0px;
 }
 
@@ -506,7 +513,8 @@ form legend {
   max-width: 680px;
 }
 
-form ul, form ol {
+form ul,
+form ol {
   list-style: none;
 }
 
@@ -522,7 +530,8 @@ label {
   max-width: 680px;
 }
 
-label:has(input[type="checkbox"]), label:has(input[type="radio"]) { 
+label:has(input[type="checkbox"]),
+label:has(input[type="radio"]) {
   cursor: pointer;
 }
 
@@ -562,9 +571,10 @@ input[type="submit"] {
   transition: background-color .3s ease;
 }
 
-button:disabled, input:disabled {
+button:disabled,
+input:disabled {
   opacity: .8;
-  cursor:not-allowed;
+  cursor: not-allowed;
 }
 
 button:hover,
@@ -593,17 +603,34 @@ input[type=file]::file-selector-button {
   cursor: pointer;
 }
 
-select, input[type="checkbox"], input[type="radio"] {
+select,
+input[type="checkbox"],
+input[type="radio"] {
   cursor: pointer;
 }
 
-input[type="checkbox"], input[type="radio"]{
+select {
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5'%3E%3Cpath style='fill:none' d='M173.879 114.512h46.806v46.806h-46.806z' transform='translate(-89.1588 -58.71) scale(.51276)'/%3E%3Cpath d='M116.547 1304.62v5.9h-5.893' style='fill:none;stroke:%23000;stroke-width:1.4px' transform='scale(1.26791) rotate(45 1629.883 532.2375)'/%3E%3C/svg%3E") no-repeat;
+  background-position: right 8px top 48% !important;
+  background-size: 24px !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  select {
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5'%3E%3Cpath style='fill:none' d='M173.879 114.512h46.806v46.806h-46.806z' transform='translate(-89.1588 -58.71) scale(.51276)'/%3E%3Cpath d='M116.547 1304.62v5.9h-5.893' style='fill:none;stroke:%23fff;stroke-width:1.18px' transform='scale(1.26791) rotate(45 1629.883 532.2375)'/%3E%3C/svg%3E") no-repeat;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
   position: absolute;
   left: -999px;
   overflow: hidden;
 }
 
-label:has(input[type="radio"]), label:has(input[type="checkbox"]) {
+label:has(input[type="radio"]),
+label:has(input[type="checkbox"]) {
   margin-top: 8px;
 }
 
@@ -635,7 +662,7 @@ label:has(input[type="checkbox"])::before {
   height: 22px;
   border: var(--line-accessible) 2px solid;
   border-radius: 4px;
-  content:'';
+  content: '';
   display: block;
 }
 
@@ -659,9 +686,16 @@ label:has(input[type="checkbox"]:checked)::before {
 /* print */
 
 @media print {
-  footer, aside, nav, form, dialog, [role=dialog] {
+
+  footer,
+  aside,
+  nav,
+  form,
+  dialog,
+  [role=dialog] {
     display: none !important;
   }
+
   section {
     padding: 12px 0px;
   }
@@ -670,6 +704,7 @@ label:has(input[type="checkbox"]:checked)::before {
 /* for all screen */
 
 @media (max-width: 1248px) {
+
   section,
   aside,
   header,
@@ -697,7 +732,8 @@ label:has(input[type="checkbox"]:checked)::before {
     font-size: 16px;
   }
 
-  header, footer {
+  header,
+  footer {
     flex-direction: column;
   }
 }
