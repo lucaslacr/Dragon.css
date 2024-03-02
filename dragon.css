@@ -455,8 +455,6 @@ footer {
   width: 100%;
   display: block;
   margin: 0 auto;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 header {
@@ -614,6 +612,7 @@ select {
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5'%3E%3Cpath style='fill:none' d='M173.879 114.512h46.806v46.806h-46.806z' transform='translate(-89.1588 -58.71) scale(.51276)'/%3E%3Cpath d='M116.547 1304.62v5.9h-5.893' style='fill:none;stroke:%23000;stroke-width:1.4px' transform='scale(1.26791) rotate(45 1629.883 532.2375)'/%3E%3C/svg%3E") no-repeat;
   background-position: right 8px top 48% !important;
   background-size: 24px !important;
+  padding-right: 32px;
 }
 
 @media (prefers-color-scheme: dark) {
