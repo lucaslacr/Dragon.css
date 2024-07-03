@@ -102,13 +102,12 @@ video {
   --text-code: #474758;
   --text-input: #383a44;
 
-  --surface-main: #eef0f3;
-  --surface-article: #e3e6eb;
-  --surface-code: #dfe2e8;
-  --surface-modal: #1d1d2bb8;
-  --surface-input: #eef0f3;
+  --surface-main: #fff;
+  --surface-code: #eaebee;
+  --surface-modal: #1d1d2b7d;
+  --surface-input: #fff;
 
-  --line-accessible: #0B051E;
+  --line-accessible: #5a5760;
   --line-decorative: #ced0da;
 
   --typo-title: sans-serif;
@@ -134,9 +133,8 @@ video {
     --text-input: #c7c9ce;
 
     --surface-main: #091015;
-    --surface-article: #0f151c;
-    --surface-code: #0f1822;
-    --surface-modal: #000000e5;
+    --surface-code: #121a20;
+    --surface-modal: #000000b0;
     --surface-input: #091015;
 
     --line-accessible: #e2e1e6;
@@ -366,8 +364,8 @@ main li::marker {
 }
 
 article {
-  padding: 12px;
-  background-color: var(--surface-article);
+  padding: 16px;
+  border: solid 1px var(--line-decorative);
   border-radius: var(--round-main);
   margin-bottom: 8px;
   margin-top: 8px;
@@ -457,6 +455,11 @@ footer {
   margin: 0 auto;
 }
 
+section> :first-child, section> :last-child, article> :first-child, article> :last-child {
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+
 header {
   flex-direction: row;
   justify-content: space-between;
@@ -485,7 +488,7 @@ footer {
 
 section,
 aside {
-  padding: 40px 0px;
+  padding: 48px 0px;
 }
 
 main img {
@@ -526,6 +529,7 @@ label {
   gap: 8px;
   align-items: center;
   max-width: 680px;
+  width: fit-content;
 }
 
 label:has(input[type="checkbox"]),
@@ -685,7 +689,6 @@ label:has(input[type="checkbox"]:checked)::before {
 /* print */
 
 @media print {
-
   footer,
   aside,
   nav,
@@ -703,7 +706,6 @@ label:has(input[type="checkbox"]:checked)::before {
 /* for all screen */
 
 @media (max-width: 1248px) {
-
   section,
   aside,
   header,

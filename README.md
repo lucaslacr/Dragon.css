@@ -13,6 +13,5 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 ### Coming Soon
 - Demo page showcasing all HTML5 elements
 - Publication of a presentation web page (subdomain)
-- Code optimization
 
-Version 1.0
+Version 1.1
