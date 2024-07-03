@@ -455,9 +455,12 @@ footer {
   margin: 0 auto;
 }
 
-section> :first-child, section> :last-child, article> :first-child, article> :last-child {
-  margin-bottom: 0px;
+section> :first-child, article> :first-child {
   margin-top: 2px;
+}
+
+section> :last-child, article> :last-child {
+  margin-bottom: 0px;
 }
 
 header {
