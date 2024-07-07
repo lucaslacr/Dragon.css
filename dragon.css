@@ -321,7 +321,8 @@ summary {
   margin-left: -14px;
 }
 
-details > summary::marker {
+details > summary::marker, 
+summary::-webkit-details-marker   {
   display: none;
   color: #0000;
 }
