@@ -11,6 +11,7 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - 🎨 Good practice UI
 
 ### Last update
-- Improvement of accordion style
+- Improvement of accordion apparence for Safari
+- Add link head for boilerplate Html
 
-Version 1.2
+Version 1.3

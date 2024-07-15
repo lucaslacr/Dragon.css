@@ -103,7 +103,7 @@ video {
   --text-input: #383a44;
 
   --surface-main: #fff;
-  --surface-code: #ebedf0;
+  --surface-code: #f1f2f2;
   --surface-modal: #1d1d2b7d;
   --surface-input: #fff;
 
@@ -318,13 +318,15 @@ summary {
   cursor: pointer;
   padding: 16px 40px 16px 0px;
   color: var(--text-title);
-  margin-left: -14px;
 }
 
 details > summary::marker, 
 summary::-webkit-details-marker   {
   display: none;
-  color: #0000;
+}
+
+details > summary {
+  list-style: none;
 }
 
 summary::after{
@@ -337,7 +339,7 @@ summary::after{
   position: absolute;
   top: 14px;
   right: 12px;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 details[open] summary::after {
@@ -349,7 +351,7 @@ details {
   color: var(--text-paragraph);
   position: relative;
   max-width: 680px;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 details[open] {
