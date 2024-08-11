@@ -11,7 +11,7 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - 🎨 Good practice UI
 
 ### Last update
-- Improvement of accordion apparence for Safari
-- Add link head for boilerplate Html
+- Improvement of modal apparence
+- Add Dialog no modal (popover)
 
-Version 1.3
+Version 1.4

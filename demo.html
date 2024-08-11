@@ -10,12 +10,14 @@
     <!-- <meta name="theme-color" content="#ffffff" /> - Color of tab on mobile browsers -->
 
     <title>Dragon.css, the no class css framework</title> <!-- Between 35 and 60 characters -->
-    <meta name="description" content="Based on HTML5 elements, Dragon is a lightweight, modern and accessibility-focused CSS framework. Get it for your next web project!"> <!-- Between 100 and 150 characters -->
+    <meta name="description"
+        content="Based on HTML5 elements, Dragon is a lightweight, modern and accessibility-focused CSS framework. Get it for your next web project!">
+    <!-- Between 100 and 150 characters -->
     <!-- <link rel="canonical" href="https://example.com/mypage/" />  - Exact Url of my online page -->
     <!-- <meta name="robots" content="index, follow"> - Rules for bot indexation -->
 
     <!-- Common link or script and their meaning
-        <link rel="prefetch" href=""/assets/style/article.css" /> - identify ressources how could be loaded for next page navigation
+        <link rel="prefetch" href="/assets/style/article.css" /> - identify ressources how could be loaded for next page navigation
 
         <link rel="preload" href="/assets/fonts/Mukta.woff2" as="font" type="font/woff2" crossorigin="anonymous"> - load important ressources as font (always same server and woff2)
         <link rel="preconnect" href="https://allmediaineeded.com/" /> - preconnect with a different server where i will need ressources
@@ -80,6 +82,11 @@
                     <td>Yes</td>
                 </tr>
             </table>
+            <blockquote>
+                <p>
+                    I use Dragon.css for my web projet
+                </p><cite>A fantastic person</cite>
+            </blockquote>
         </section>
         <section>
             <h3>Some Dragon code logic</h3>
@@ -101,6 +108,7 @@ p {
     margin-bottom: 24px;
   }
           </code> </pre>
+         
         </section>
         <section>
             <h2>Interactive elements</h2>
@@ -113,23 +121,19 @@ p {
                 <summary>It work's with javascript</summary>
                 No, it native Html5
             </details>
+            <h3>Dialog</h3>
+            <button popovertarget="my-popover">Open dialog</button>
+            <div popover id="my-popover">It's helpful to display complementary informations</div>
+
             <h3>Modal</h3>
             <dialog id="dialog">
                 <h4>I'm a modal</h4>
-                <p>It's helpful to display complementary informations</p>
+                <p>It's useful to ask something to the users</p>
                 <form method="dialog">
                     <button>Close</button>
                 </form>
             </dialog>
-            <button aria-haspopup="dialog" onclick="dialog.showModal()">Open Modal</button>
-        </section>
-        <section>
-            <blockquote>
-                <p>
-                    I use Dragon.css for my web projet
-                </p><cite>A fantastic person</cite>
-            </blockquote>
-
+            <button aria-haspopup="dialog" onclick="dialog.showModal()">Open modal</button>
         </section>
         <section>
             <hr>
