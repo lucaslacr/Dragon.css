@@ -12,6 +12,9 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 
 ### Last update
 - Improvement of modal apparence
-- Add Dialog no modal (popover)
+- Improvement of table apparence
+- Add dialog no modal (popover)
+- Add native accessibility setting support (reduce motion and hight contrast)
 
-Version 1.4
+
+Version 1.5
