@@ -11,10 +11,7 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - 🎨 Good practice UI
 
 ### Last update
-- Improvement of modal apparence
-- Improvement of table apparence
-- Add dialog no modal (popover)
-- Add native accessibility setting support (reduce motion and hight contrast)
+- Add switch componant
 
 
-Version 1.5
+Version 1.6
