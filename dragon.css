@@ -106,6 +106,7 @@ video {
   --surface-code: #f1f2f2;
   --surface-modal: #1d1d2b7d;
   --surface-input: #fff;
+  --surface-switch: #c0c2cc;
 
   --line-accessible: #5a5760;
   --line-decorative: #ced0da;
@@ -139,6 +140,7 @@ video {
     --surface-code: #121a20;
     --surface-modal: #000000b0;
     --surface-input: #091015;
+    --surface-switch: #3e4856;
 
     --line-accessible: #e2e1e6;
     --line-decorative: #232a34;
@@ -731,6 +733,7 @@ input[type="checkbox"][role="switch"] + label {
   display: block;
   position: relative;
   padding-left: 56px;
+  margin-bottom: 24px;
   cursor: pointer;
 }
 
@@ -742,7 +745,7 @@ input[type="checkbox"][role="switch"] + label:before {
   transform: translateY(-50%);
   width: 48px;
   height: 26px;
-  background-color: var(--line-decorative);
+  background-color: var(--surface-switch);
   border-radius: 99px;
   transition: background-color 0.2s ease-in-out;
 }
@@ -779,7 +782,7 @@ input[type="range"] {
   width: 200px;
   height: 12px;
   accent-color: var(--primary);
-  background:var(--line-decorative);
+  background:var(--surface-switch);
   border-radius: 5px;
   padding: 0;
   border: 0;
@@ -810,6 +813,34 @@ input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb
   }
   input, select, textarea {
     border: 2px solid var(--line-accessible);
+  }
+  input[type="checkbox"][role="switch"] + label::before {
+    border: 2px solid var(--line-accessible);
+  }
+  input[type="file"] {
+    border: 2px dashed var(--line-accessible);
+  }
+  input[type="file"]::file-selector-button {
+    border: 2px solid var(--line-accessible);
+  }
+  input[type="checkbox"][role="switch"] + label::after {
+    top: -3px;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--line-accessible);
+  }
+  input[type="range"] {
+    border: 2px solid var(--line-accessible);
+  }
+  input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb {
+    border: 2px solid var(--line-accessible);
+  }
+  pre {
+    border: 1px solid var(--line-accessible);
+  }
+  p a, figcaption a, caption a, legend a, li a {
+    border-bottom: var(--line-accessible) 2px solid;
   }
 }
 

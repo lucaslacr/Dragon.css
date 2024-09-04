@@ -11,7 +11,8 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - 🎨 Good practice UI
 
 ### Last update
-- Add switch componant
+- Add switch composant
+- Improvement of hight contrast setting
 
 
-Version 1.6
+Version 1.7
