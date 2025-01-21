@@ -581,6 +581,10 @@ label {
   width: fit-content;
 }
 
+label span{
+  font-weight: normal;
+}
+
 label:has(input[type="checkbox"]),
 label:has(input[type="radio"]) {
   cursor: pointer;
