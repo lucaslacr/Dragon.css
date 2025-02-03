@@ -612,6 +612,11 @@ textarea {
   width: 100%;
 }
 
+input:user-invalid {
+  color: var(--text-input);
+  border: 1px solid var(--text-alert);
+}
+
 button,
 input[type="submit"] {
   font-family: var(--typo-corps);

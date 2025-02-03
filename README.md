@@ -14,6 +14,7 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - Add switch composant
 - Improvement of hight contrast setting
 - Add different font weight for mention of requirement on label
+- Add user invalid status
 
 
-Version 1.8
+Version 1.9
