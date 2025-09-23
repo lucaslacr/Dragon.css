@@ -260,7 +260,6 @@ pre {
 blockquote,
 q {
   font-size: 18px;
-  padding-left: 20px;
   padding: 16px 16px 16px 24px;
   border-left: var(--primary) solid 3px;
   margin-bottom: 16px;
@@ -401,6 +400,12 @@ dialog> :first-child, [popover]> :first-child {
 
 /* layout elements */
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
 main ul,
 main ol {
   margin-left: 16px;
@@ -533,11 +538,6 @@ footer {
   display: flex;
   flex-direction: row;
   padding: 24px 0px;
-}
-
-section,
-aside {
-  padding: 48px 0px;
 }
 
 main img {
@@ -875,8 +875,7 @@ input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb
   aside,
   header,
   footer {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-inline: 24px;
   }
 }
 
