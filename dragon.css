@@ -529,11 +529,6 @@ label span {
   font-weight: normal;
 }
 
-label:has(input[type="checkbox"]),
-label:has(input[type="radio"]) {
-  cursor: pointer;
-}
-
 form p {
   margin-bottom: 2px;
   font-size: small;
@@ -609,7 +604,8 @@ input[type=file]::file-selector-button {
 
 select,
 input[type="checkbox"],
-input[type="radio"] {
+input[type="radio"], label:has(input[type="checkbox"]),
+label:has(input[type="radio"]) {
   cursor: pointer;
 }
 
