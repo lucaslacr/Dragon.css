@@ -11,10 +11,10 @@ Stylesheet for web pages. Designed without using CSS classes, with a focus on re
 - 🎨 Good practice UI
 
 ### Last update
-- Add switch composant
-- Improvement of hight contrast setting
-- Add different font weight for mention of requirement on label
-- Add user invalid status
+- Add popover propriety
+- adding view transition
+- layout safe area 24px to 16px
+- Removing padding on fieldset
 
 
-Version 1.9
+Version 2.0
